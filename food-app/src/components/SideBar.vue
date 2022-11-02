@@ -1,15 +1,22 @@
 <template>
-    <div class="sidebar"> </div>
+    <div class="sidebar" :style="{width:sidebarWidth}"> 
+        <span
+        > 
+ 
+            
+        </span>
+
+    </div>
 </template>
 
 
 <script>
-
+import {collapsed, toggleSidebar, sidebarWidth} from './state'
 
 export default ({
     props: {},
     setup() {
-        
+        return {collapsed, toggleSidebar, sidebarWidth}
     },
 })
 </script>
@@ -35,7 +42,7 @@ export default ({
     transition:0.3 ease;
     display:flex; 
     flex-direction:column;
-    
+
 }
 
 </style>
