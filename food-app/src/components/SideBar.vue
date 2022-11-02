@@ -1,9 +1,11 @@
 <template>
     <div class="sidebar" :style="{width:sidebarWidth}"> 
         <span
+        class="collapse-icon"
+        @click="toggleSidebar"
         > 
- 
-            
+
+     <v-icon :path="path"> mdi-chevron-double-left</v-icon>
         </span>
 
     </div>
@@ -12,8 +14,13 @@
 
 <script>
 import {collapsed, toggleSidebar, sidebarWidth} from './state'
-
+import { mdiChevronDoubleLeft } from '@mdi/js';
 export default ({
+data(){
+return{
+    path:mdiChevronDoubleLeft
+}
+},
     props: {},
     setup() {
         return {collapsed, toggleSidebar, sidebarWidth}
@@ -43,6 +50,14 @@ export default ({
     display:flex; 
     flex-direction:column;
 
+}
+
+.collapse-icon{
+    position:absolute;
+    bottom:0;
+    padding:0.75em;
+    color:rgba(255,255,255,0.7);
+    transition:0.2s linear;
 }
 
 </style>
