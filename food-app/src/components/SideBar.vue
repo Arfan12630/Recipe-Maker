@@ -10,10 +10,10 @@
   <span v-else> Vue Sidebar </span>
 </h1>
  <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
-    <SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
-    <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
-    <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>
+    <SidebarLink to="/dashboard" icon="fas fa-columns">Appetizer</SidebarLink>
+    <SidebarLink to="/analytics" icon="fas fa-chart-bar">Lunch</SidebarLink>
+    <SidebarLink to="/friends" icon="fas fa-users">Entrees</SidebarLink>
+    <SidebarLink to="/image" icon="fas fa-image">Desert</SidebarLink>
 
   <span 
   class="collapse-icon"
