@@ -1,8 +1,9 @@
 <template>
- 
-    <input placeholder="Enter food " class="searchbar"/> 
+ <div>
+       
+  
 
-
+</div>
 </template>
 
 <script>
@@ -16,19 +17,14 @@ export default {
 }
 </script>
 
-<style scoped>
-.searchbar{
-    width:1200px;
-    display: "flex";
-    flex-direction: "column";
-    justify-content: "center";
-    align-items: "center";
-    text-align:"center";
-    margin-left: 10px;
-    margin-top: -10px;
-    border-radius:10px 0 15px 0;
-    padding: 10px 20px;
-    color:black;
+<style>
+body{
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg');
+  background-repeat:no-repeat;
+  background-size: 110%;
 }
- 
+
+body:hover{
+ background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg');
+}
 </style>
