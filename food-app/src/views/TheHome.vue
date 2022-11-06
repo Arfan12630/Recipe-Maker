@@ -34,7 +34,7 @@ body:after{
   right: 0;
   content: '';
   transition: all 0.3s ease;
-  z-index:1;
+  z-index:1;    
   opacity: 0;
   
 }
