@@ -10,6 +10,7 @@ header = document.find('title').get_text().lstrip().rstrip() #returns "Indian Ch
 spans = document.find_all('span', class_="meta-text__label")
 timeHeading  = [(span.get_text())for span in spans]
 prepTime = document.find_all('span', class_="meta-text__data")
+timePrep = [(prep.get_text())for prep in prepTime]
+print(timePrep)
 recipe['metadata']['name'] = header
 recipe['metadata']['preps'] = timeHeading
-recipe['metadata']['preptime'] = prepTime

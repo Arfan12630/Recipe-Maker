@@ -1,6 +1,6 @@
 <template>
  <div>
-       
+      <CardHolder/> 
   
 
 </div>
@@ -8,17 +8,17 @@
 
 <script>
 // @ is an alias to /src
-
+import CardHolder from '../components/CardHolder.vue'
 export default {
   name: 'TheHome',
   components: {
-
+    CardHolder
   }
 }
 </script>
 
 <style>
-body{
+/* body{
   background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg');
   background-repeat:no-repeat;
   background-size: 110%;
@@ -43,5 +43,5 @@ body:hover:before,
 body:hover:after{
   transform: scale(1);
   opacity: 1;
-}
+} */
 </style>
