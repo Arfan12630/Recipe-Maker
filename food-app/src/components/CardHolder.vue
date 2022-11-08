@@ -31,13 +31,8 @@ export default {
           color: 'blue',
           bgtext: 'AIR',
           
-        },
-        {
-          title: 'Nike Roche Runs',
-          color: 'pink',
-          bgtext: 'MAX',
-          
         }
+       
       ]
     }
   }
@@ -55,7 +50,7 @@ export default {
   }
   main {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 100vh; 
     overflow: hidden;
     background-color: #EEE;
     display: flex;
@@ -64,8 +59,8 @@ export default {
   }
   .products {
     display: flex;
-    max-width: 1280px;
+    max-width: 850px;
     padding: 25px;
-    margin: 0 auto;
+   
   }
 </style>

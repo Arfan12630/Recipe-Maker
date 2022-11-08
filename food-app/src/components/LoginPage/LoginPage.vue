@@ -1,11 +1,11 @@
 <template>
-<form class="form-box"> 
+<form @submit.prevent="submitData" class="form-box"> 
     <div class="form-inner"> 
       <h2> Recipe ShareSpot </h2> 
 
         <div class="form-group"> 
             <label> <b> Username </b> </label>
-            <input placeholder="Enter username"/>
+            <input placeholder="Enter username"  v-model="userName"/>
         </div>
 
 
@@ -14,7 +14,9 @@
             <input placeholder="Enter password"/>
 
         </div>
+            <button> Submit </button>
     </div> 
+
 
     </form>
 </template>
@@ -23,9 +25,18 @@
 
 
 export default ({
-    setup() {
-        
+    data() {
+      return {
+        userName:''
+      }
     },
+    methods:{
+  submitData() {
+    
+        console.log('Username:' + this.userName)
+        this.userName=''
+        }
+    }
 })
 </script>
 
