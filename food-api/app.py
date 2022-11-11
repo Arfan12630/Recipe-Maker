@@ -33,7 +33,7 @@ def current_user():
     user = User.query.filter_by(id=user_id).first()
 
     return jsonify({
-        "id":user.id,
+        "id":user.id,  
         "email":user.email
     })
 @app.route('/register', methods=["POST"])
