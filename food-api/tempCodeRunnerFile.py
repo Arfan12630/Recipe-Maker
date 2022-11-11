@@ -1,1 +1,1 @@
-print(spans)
+db_collection_dinner.insert_one(recipe)
